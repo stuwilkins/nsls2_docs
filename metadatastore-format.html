@@ -250,8 +250,8 @@ data associated with the trigger.</p>
 event_trigger_descriptor_a : {
     &quot;uid&quot; : &lt;uid&gt;,
     &quot;keys&quot; : {
-        &quot;sclr&quot; : {&quot;dest&quot; : &quot;PV:XF:23ID1-ES{Sclr:1}.CNT&quot;, &quot;value&quot; : 1 }
-        &quot;ccd&quot; : {&quot;dest&quot; : &quot;PV:XF:23ID1-ES{Dif-Cam:PIMTE}cam1:Acquire&quot;,
+        &quot;sclr&quot; : {&quot;source&quot; : &quot;PV:XF:23ID1-ES{Sclr:1}.CNT&quot;, &quot;value&quot; : 1 }
+        &quot;ccd&quot; : {&quot;source&quot; : &quot;PV:XF:23ID1-ES{Dif-Cam:PIMTE}cam1:Acquire&quot;,
                  &quot;value&quot;, 1 }
     }
     &quot;run&quot; : &lt;uid&gt;,
@@ -259,7 +259,8 @@ event_trigger_descriptor_a : {
 }
 </pre></div>
 </div>
-<p>Where as before <tt class="docutils literal"><span class="pre">run</span></tt> is a pointer to the start run event.</p>
+<p>Where as before <tt class="docutils literal"><span class="pre">run</span></tt> is a pointer to the start run event. These are
+syntaxtically identical to :ref:measure_events.</p>
 </div>
 <div class="section" id="measure-events">
 <span id="id1"></span><h2>Measure Events<a class="headerlink" href="#measure-events" title="Permalink to this headline">¶</a></h2>
